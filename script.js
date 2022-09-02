@@ -2614,10 +2614,10 @@ select.hidden = false;
 
 const boxIcon = document.querySelector('.header__text-icon');
 
-document.addEventListener('click',colorIcon);
+document.addEventListener('click', colorIcon);
 
 function colorIcon(event) {
-    if(event.target.closest('.header__text-icon')) {
+    if (event.target.closest('.header__text-icon')) {
         boxIcon.classList.toggle('__active')
     }
 }
@@ -2641,23 +2641,23 @@ btn.addEventListener('mouseup', (e) => {
     content.style.backgroundColor = '';
 })
 
-btn.addEventListener('mousemove',(e) => {
+btn.addEventListener('mousemove', (e) => {
     console.log(e.clientX);
     console.log(e.clientY);
     console.log('Move it');
 })
-btn.addEventListener('mouseout',() => {
+btn.addEventListener('mouseout', () => {
     console.log('Bye!');
 })
 
 const body = document.querySelector('body');
 const divMouseMove = document.querySelector('.content__mousemove');
-body.addEventListener('mousemove',(e) => {
+body.addEventListener('mousemove', (e) => {
     divMouseMove.textContent = `Width = ${e.clientX}, hight = ${e.clientY}`
 })
 
 const test = document.querySelector('.test');
 
 test.addEventListener('click', () => {
-        test.classList.toggle('red');
-    });
+    test.classList.toggle('red');
+});
